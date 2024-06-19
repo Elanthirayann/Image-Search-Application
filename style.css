@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+body {
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    height: 37px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-size: 18px;
+}
+
+#search-button {
+    height: 37px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px rgb(63, 112, 180);
+    color: #000000;
+    font-size: 18px;
+    background-color:#008cba;
+    cursor: pointer;
+    border: none;
+}
+
+#search-button:hover {
+    background-color: rgb(51, 88, 139);
+}
+
+#search-button:active {
+    background-color: rgb(51, 99, 166);
+}
+
+.search-results {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+
+.search-result {
+    width: 30%;
+    height: 100%;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    color: #333;
+    overflow: hidden;
+}
+
+.search-result img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.search-result:hover img {
+    opacity: 0.8;
+}
+
+.search-result a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button{
+    background-color:#008cba;
+    font-size: 15px;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+    height: 37px;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-result{
+        width: 100%;
+    }
+}
